@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" prefHeight="343.0" prefWidth="414.0" style="-fx-background-color: #1abc9c;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardCotroller">
+   <children>
+      <ImageView fx:id="img_returnBooks" fitHeight="87.0" fitWidth="96.0" layoutX="223.0" layoutY="183.0" onMouseClicked="#navigate" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/book(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_managerMembr" fitHeight="87.0" fitWidth="96.0" layoutX="104.0" layoutY="49.0" onMouseClicked="#navigate" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/hired.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_manageBooks" fitHeight="87.0" fitWidth="96.0" layoutX="223.0" layoutY="49.0" onMouseClicked="#navigate" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/books.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_issuBooks" fitHeight="87.0" fitWidth="96.0" layoutX="104.0" layoutY="183.0" onMouseClicked="#navigate" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/printer.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDesc" alignment="CENTER" layoutX="74.0" layoutY="300.0" prefHeight="29.0" prefWidth="267.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnExit" layoutX="369.0" layoutY="14.0" onAction="#btnExitOnAction" prefHeight="29.0" prefWidth="30.0" text="X" textFill="#e40404" />
+   </children>
+</AnchorPane>

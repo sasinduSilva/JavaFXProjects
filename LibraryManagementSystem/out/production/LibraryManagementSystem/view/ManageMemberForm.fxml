@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="477.0" prefWidth="848.0" style="-fx-background-color: #d9d7d4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageMemberController">
+   <children>
+      <ImageView fx:id="img_Home" fitHeight="81.0" fitWidth="92.0" layoutX="271.0" layoutY="25.0" onMouseClicked="#navigateHome" onMouseEntered="#mouseEnteredAction" onMouseExited="#mouseExitedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/house.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="385.0" layoutY="37.0" prefHeight="47.0" prefWidth="282.0" text="Manage Members">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddNew" layoutX="60.0" layoutY="194.0" onAction="#btnAddNewOnAction" prefHeight="26.0" prefWidth="134.0" style="-fx-background-color: #787572;" text="Add New Member" textFill="#fcfcfc" />
+      <JFXTextField fx:id="txtMembrID" layoutX="15.0" layoutY="253.0" onAction="#txtMembrIDOnAction" prefHeight="24.0" prefWidth="228.0" promptText="Member ID" />
+      <JFXTextField fx:id="txtMembrName" layoutX="13.0" layoutY="296.0" onAction="#txtMembrNameOnAction" prefHeight="24.0" prefWidth="228.0" promptText="Member Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="13.0" layoutY="344.0" onAction="#txtAddressOnAction" prefHeight="24.0" prefWidth="228.0" promptText="Address" />
+      <JFXTextField fx:id="txtContctNumber" layoutX="13.0" layoutY="389.0" onAction="#txtContctNumberOnAction" prefHeight="24.0" prefWidth="228.0" promptText="Contact No" />
+      <TableView fx:id="tblMembrDetails" layoutX="271.0" layoutY="197.0" prefHeight="246.0" prefWidth="556.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="180.0" text="Name" />
+            <TableColumn prefWidth="157.0" text="Address" />
+            <TableColumn prefWidth="142.0" text="Contact No" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="28.0" layoutY="430.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #787572;" text="Add" textFill="#f2eeee" />
+      <JFXButton fx:id="btnDelete" layoutX="147.0" layoutY="430.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: #787572;" text="Delete" textFill="#f5eeee" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="53.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/man.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="250.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="477.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>
